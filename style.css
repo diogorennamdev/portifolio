@@ -1,0 +1,88 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Preahvihear', sans-serif;
+   
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.header {
+    background-image: url(./assets/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+span{
+    color: #7127BA;
+    font-weight: bold;
+}
+.header .menu {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5em;
+    padding-top: 1em;
+    align-items: center;
+}
+
+.header .menu ul {
+    list-style: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.30);
+    opacity: 30;
+    display: flex;
+    border-radius: 28px;
+
+}
+
+.header .menu ul li {
+    padding: 1em 0.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1em;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.header .menu ul li:hover {
+    background-color: #000;
+    color: #fff;
+    
+}
+.header .menu ul li:nth-child(2):hover{
+    border-top-left-radius: 28px;
+
+}
+.sectionPresentation {
+    display: flex;
+    padding-inline: 1em;
+    margin-top: 4em;
+}
+
+.hero h1 {
+    color: #fff;
+    margin-top: 30px;
+}
+
+.hero h2{
+    color: #fff;
+    font-size: 20px;
+}
+
+.hero p{
+    color: #fff;
+    font-size: 40px;
+    margin-top: 40px;
+}
+.AboutMe {
+    height: 200px;
+    background-color: #2B0B3A;
+}
