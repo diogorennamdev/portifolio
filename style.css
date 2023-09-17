@@ -6,7 +6,18 @@
 
 body {
     font-family: 'Preahvihear', sans-serif;
-   
+    background-color: var(--background-color);
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-color: #11071F;
+    --text-color: #fff;
 }
 
 body::-webkit-scrollbar {
@@ -20,11 +31,14 @@ body::-webkit-scrollbar {
     background-size: cover;
     height: 100vh;
     width: 100%;
+
 }
-span{
+
+span {
     color: #7127BA;
     font-weight: bold;
 }
+
 .header .menu {
     display: flex;
     justify-content: space-between;
@@ -35,7 +49,7 @@ span{
 
 .header .menu ul {
     list-style: none;
-    color: #fff;
+    color: var(--text-color);
     background: rgba(255, 255, 255, 0.30);
     opacity: 30;
     display: flex;
@@ -49,18 +63,32 @@ span{
     font-weight: bold;
     padding: 1em;
     cursor: pointer;
-    transition: all 0.1s;
+    text-decoration: none;
+}
+
+.header .menu ul li a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .header .menu ul li:hover {
     background-color: #000;
-    color: #fff;
-    
-}
-.header .menu ul li:nth-child(2):hover{
-    border-top-left-radius: 28px;
+    color: var(--text-color);
 
 }
+
+.header .menu ul li:nth-child(1):hover {
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+
+}
+
+.header .menu ul li:nth-child(5):hover {
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+
+}
+
 .sectionPresentation {
     display: flex;
     padding-inline: 1em;
@@ -68,21 +96,116 @@ span{
 }
 
 .hero h1 {
-    color: #fff;
+    color: var(--text-color);
     margin-top: 30px;
 }
 
-.hero h2{
-    color: #fff;
-    font-size: 20px;
+.hero h2 {
+    color: var(--text-color);
+    font-size: 25px;
 }
 
-.hero p{
-    color: #fff;
+.hero p {
+    color: var(--text-color);
     font-size: 40px;
     margin-top: 40px;
 }
+
 .AboutMe {
+    background-color: var(--background-color);
+    padding-inline: 3em;
+
+}
+
+.AboutMe h1 {
+    color: var(--text-color);
+
+
+}
+
+.about {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.about p {
+    color: var(--text-color);
+    font-size: 20px;
+    text-align: justify;
+}
+
+.about img {
+    padding-inline: 3em;
+}
+
+.techs {
+    background-color: var(--background-color);
+
+}
+
+.techs h1 {
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.techsImagem {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 30px;
+}
+.experienceProfessional{
+    padding-inline: 3em;
+    height: 100vh;
+
+}
+
+.experienceProfessional h1{
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.CardsExperiences{
+    display: flex;
+    justify-content: space-between;
+}
+.cardExperience {
+    border-radius: 15px;
+    background: linear-gradient(110deg, #130428 19.95%, #251043 67.64%, #38126D 107.08%, #261045 156.61%, #190634 183.21%);
+    box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    border-top: 5px solid #4F228D;
+    display: flex;
+    align-items: center;
     height: 200px;
-    background-color: #2B0B3A;
+}
+.cardExperience img {
+    width: 150px;
+    height: auto;
+}
+.InformationExperience{
+    color: var(--text-color);
+
+}
+.InformationExperience h2{
+    color: var(--text-color);
+}
+.InformationExperience button{
+    background-color: #2C1250;
+    border: 2px solid #693B93;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+  
+}
+.InformationExperience button a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
 }
