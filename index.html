@@ -13,95 +13,150 @@
 </head>
 
 <body>
-        <header class="header">
-            <nav id="menu" class="menu">
-                <a href="#menu"> <img src="./assets/logo.svg" alt="logo" /> </a>
-                <button class="hamburguer"></button>
-               
-                    <ul>
-                        <li>
-                            <a href="#AboutMe"> Sobre</a>
-                        </li>
-                        <li><a href="">Projetos</a></li>
-                        <li><a href="">Experiência</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Educação</a></li>
-                    </ul>
-            </nav>
+    <header class="header">
+        <nav id="menu" class="menu">
+            <a href="#menu">
+                <h1>DIOGO <br>RENNAM</h1>
+            </a>
+            <button class="hamburguer"></button>
 
-            <div class="sectionPresentation">
-                <img src="./assets/imageBoneco.svg" alt="" />
-                
-                <div class="hero">
-                    <h1>Olá! Eu sou <span>Diogo Rennam</span></h1>
-                    <h2>Front-end Developer</h2>
-                    <p>
-                        Transformando Conceitos em <br />
-                        Eperiências Digitais Memoráveis
-                    </p>
-                </div>
+            <ul>
+                <li>
+                    <a href="#AboutMe"> Sobre</a>
+                </li>
+                <li><a href="">Projetos</a></li>
+                <li><a href="">Experiência</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Educação</a></li>
+            </ul>
+        </nav>
+
+        <div class="sectionPresentation">
+            <img src="./assets/imageBoneco.svg" alt="" />
+
+            <div class="hero">
+                <h1>Olá! Eu sou <span>Diogo Rennam</span></h1>
+                <h2>Front-end Developer</h2>
+                <p>
+                    Transformando Conceitos em <br />
+                    Eperiências Digitais Memoráveis
+                </p>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <section id="AboutMe" class="AboutMe">
-            <h1>SOBRE:</h1>
-            <div class="about">
+    <section id="AboutMe" class="AboutMe">
+        <h1>SOBRE:</h1>
+        <div class="about">
+            <div class="ProfilePhoto">
+                <img src="./assets/ImagemDiogo.svg" alt="imagem de diogo Rennam">
+            </div>
+            <div>
                 <p>
                     Olá a todos! Sou Diogo Rennam, um apaixonado por tecnologia atualmente cursando Análise e
                     Desenvolvimento de Sistemas. Com foco na área de desenvolvimento front-end, trabalho com diversas
                     tecnologias, como JavaScript, HTML, CSS, Git, ReactJS e React Native, com o objetivo de me tornar um
                     desenvolvedor Full-stack no futuro.
-                    <br>
-                    Minha jornada profissional é marcada por um compromisso constante com o aprendizado e a evolução.
-                    Mantenho-me atualizado com as tendências da indústria, buscando sempre aprimorar minhas habilidades.
-                    <br>
-                    Além de minha ocupação profissional, sou um fervoroso defensor do voluntariado em iniciativas
-                    sociais, pois acredito firmemente que a tecnologia possui um potencial imenso para gerar um impacto
-                    benéfico na sociedade.
-                    <br>
-                    Estou animado com as oportunidades que o futuro reserva e ansioso para contribuir de forma
-                    significativa no campo da tecnologia e além.
                 </p>
 
-                <div class="ProfilePhoto">
-                    <img src="./assets/ImagemDiogo.svg" alt="imagem de diogo Rennam">
-                </div>
-            </div>
-        </section>
-        <section class="techs">
-            <h1>Tecnologias e Ferramentas que tenho domínio</h1>
-            <div class="techsImagem">
-                <img src="./assets/Stacks.svg" alt="">
-
-            </div>
-        </section>
-
-        <section class="experienceProfessional">
-            <h1>Experências Profissionais:</h1>
-            <div class="CardsExperiences">
-                <div class="cardExperience">
-                    <img src="/assets/logoNewtoo.svg" alt="logo newtoo">
-                    <div class="InformationExperience">
-                        <h2>Front-end Developer</h2>
-                        <p>Atuo como desenvolvedor Front-end e Ux/desing </p>
-                        <p>Fev 2023 - atual</p>
-
-                        <a href="https://newtoo.com.br/" target="_blank">Newtoo</a>
-                    </div>
-                </div>
-
-                <div class="cardExperience">
-                    <img src="/assets/logoEsquadromil.svg" alt="logo newtoo">
-                    <div class="InformationExperience">
-                        <h2>Jovem Aprendiz</h2>
-                        <p>Atuava no setor de tecnologia com suporte ao usuário </p>
-                        <a href="https://www.esquadromil.com.br/" target="_blank">Esquadromil</a>
-                    </div>
-                </div>
+                <!-- Parte do texto que será ocultada inicialmente -->
+                <p id="maisTexto" style="display:none">
+                    Minha jornada profissional é marcada por um compromisso constante com o aprendizado e a evolução.
+                    Mantenho-me atualizado com as tendências da indústria, buscando sempre aprimorar minhas habilidades.
+                    Além de minha ocupação profissional, sou um fervoroso defensor do voluntariado em iniciativas
+                    sociais, pois acredito firmemente que a tecnologia possui um potencial imenso para gerar um impacto
+                    benéfico na sociedade. Estou animado com as oportunidades que o futuro reserva e ansioso para
+                    contribuir de forma significativa no campo da tecnologia e além.
+                </p>
+                  <!-- Botão "Leia mais" -->
+            <span id="leiaMaisBtn">Leia mais</span>
             </div>
 
-        </section>
 
+          
+
+
+        </div>
+    </section>
+    <section class="techs">
+        <h1>Tecnologias e Ferramentas que tenho domínio</h1>
+        <div class="techsImagem">
+            <img src="./assets/Stacks.svg" alt="">
+
+        </div>
+    </section>
+
+    <section class="experienceProfessional">
+        <h1>Experências Profissionais:</h1>
+        <div class="CardsExperiences">
+            <div class="cardExperience">
+                <img src="/assets/logoNewtoo.svg" alt="logo newtoo">
+                <div class="InformationExperience">
+                    <h2>Front-end Developer</h2>
+                    <p>Atuo como desenvolvedor Front-end e Ux/desing </p>
+                    <p>Fev 2023 - atual</p>
+
+                    <a href="https://newtoo.com.br/" target="_blank">Newtoo</a>
+                </div>
+            </div>
+
+            <div class="cardExperience">
+                <img src="/assets/logoEsquadromil.svg" alt="logo newtoo">
+                <div class="InformationExperience">
+                    <h2>Jovem Aprendiz</h2>
+                    <p>Atuava no setor de tecnologia com suporte ao usuário </p>
+                    <p>Mar 2022 - Fev 2023</p>
+                    <a href="https://www.esquadromil.com.br/" target="_blank">Esquadromil</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="sectionEducation">
+        <h1>Educação</h1>
+
+        <div class="education">
+            <details id="details1">
+                <summary>Ensino médio</summary>
+
+                <ul>
+                    <li>Colégio Estadual Norberto Fernandes</li>
+                    <li>Destaques:</li>
+                    <li>Primeiro lugar (Fecimac) Feira de ciencias de Caculé</li>
+                    <li>Finalista - Feira Brasileira de Ciências e Engenharia (Febrace) </li>
+                </ul>
+            </details>
+
+            <details id="detailsEnsinoSuperior">
+                <summary>Ensino Superior</summary>
+                <ul>
+                    <li>Analises e desenvolvimento de Sistemas (UNIFG) Guanambi-BA</li>
+                    <li>Destaques:</li>
+                    <li>Integrante da comunidade <a href="">girls in tech</a> </li>
+                    <li>Mentor de Minicursos e Palestras e produto de contéudo Digital</li>
+                </ul>
+
+            </details>
+
+            <details id="detailsEnsinoSuperior">
+                <summary>Cursos e Certificações</summary>
+                <ul>
+                    <li>Curso Ux/Design <a href="https://webprocess.me/" target="_blank"> Web Process</a> (em andamento)
+                    </li>
+                    <li>AWS Academy Graduate - AWS Academy Cloud Foundations</li>
+                    <li>Networking Essentials Introdução a redes </li>
+                    <li>Cybersecurity Essentials</li>
+                    <li>Mentor do Minicurso Primeiro Passos na web</li>
+                </ul>
+                <p>Todos certificados podem ser verificados <a
+                        href="https://drive.google.com/drive/folders/1lnlRr-he0RLZzby5oa1ZwSIFmdgI8JCv?usp=sharing"
+                        target="_blank">aqui</a></p>
+            </details>
+        </div>
+
+
+    </section>
 </body>
 <script src="./script.js"></script>
 

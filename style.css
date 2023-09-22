@@ -20,7 +20,31 @@ html {
     --text-color: #fff;
 }
 
-body::-webkit-scrollbar {}
+/* Remova as barras de rolagem padrão do navegador */
+body::-webkit-scrollbar {
+    width: 8px;
+    /* Largura da barra de rolagem */
+}
+
+/* Estilize o fundo da barra de rolagem */
+body::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Cor de fundo da barra de rolagem */
+}
+
+/* Estilize o botão de rolagem */
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Cor do botão de rolagem */
+    border-radius: 4px;
+    /* Cantos arredondados do botão de rolagem */
+}
+
+/* Estilize o botão de rolagem quando estiver passando o mouse por cima */
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Cor do botão de rolagem quando o mouse está sobre ele */
+}
 
 
 .header {
@@ -49,8 +73,13 @@ span {
 
 }
 
-.header .menu img {
-    width: 150px;
+.header .menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header .menu h1 {
+    text-align: center;
 }
 
 .header .menu ul {
@@ -84,8 +113,6 @@ span {
     background: #fff;
     margin-top: 5px;
     position: relative;
-
-
 }
 
 .header .menu ul li a {
@@ -98,8 +125,6 @@ span {
     color: #0fbb31;
 
 }
-
-
 
 .sectionPresentation {
     display: flex;
@@ -139,6 +164,7 @@ span {
     display: flex;
     align-items: center;
 
+
 }
 
 
@@ -146,6 +172,17 @@ span {
     color: var(--text-color);
     font-size: 20px;
     text-align: justify;
+}
+
+#maisTexto {
+    display: none;
+    text-align: justify;
+}
+
+/* Estilo para o botão "Leia mais" */
+#leiaMaisBtn {
+    cursor: pointer;
+    color: blue;
 }
 
 .about img {
@@ -177,7 +214,7 @@ span {
 
 .experienceProfessional {
     padding-inline: 3em;
-    height: 100vh;
+
 
 }
 
@@ -201,7 +238,7 @@ span {
     border-top: 5px solid #4F228D;
     display: flex;
     align-items: center;
-    height: 200px;
+    max-height: 200px;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -233,14 +270,66 @@ span {
 
 }
 
+.sectionEducation {
+    display: flex;
+    padding-inline: 3em;
+    padding-top: 7em;
+    flex-direction: column;
+}
+
+.education {
+    color: #fff;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sectionEducation h1 {
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.education details {
+    width: 100%;
+}
+
+.education details summary {
+
+    background: linear-gradient(110deg, #130428 19.95%, #251043 67.64%, #38126D 107.08%, #261045 156.61%, #190634 183.21%);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.education details ul {
+
+    padding-left: 20PX;
+}
+
+.education details ul li {
+    padding: 10px;
+
+
+}
+
+#detailsEnsinoSuperior ul a {
+
+    text-decoration: none;
+
+}
 
 @media (max-width: 1042px) {
     .CardsExperiences {
         display: block;
         justify-content: space-between;
     }
-
-  
 
     .header .menu {
         padding-inline: 1em;
@@ -256,26 +345,53 @@ span {
         display: block;
 
     }
-    .sectionPresentation{
+
+    .sectionPresentation {
         display: flex;
         align-items: center;
         flex-direction: column;
         text-align: center;
     }
-    .hero h1{
-        margin-top: 10px;;
+
+    .hero h1 {
+        margin-top: 10px;
+        font-size: 25px;
     }
+
     .hero p {
         font-size: 30px;
         margin-top: 20px;
     }
 
 }
-@media (max-width: 760px){
+
+@media (max-width: 760px) {
+
+    .sectionPresentation img {
+        width: 15em
+    }
+
+    ;
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
     .hamburguer {
         display: block;
         z-index: 1;
     }
+
+    .header .menu h1 {
+        font-size: 15px;
+        text-align: center;
+    }
+
     .header .menu ul {
         display: block;
         background-color: transparent;
@@ -296,6 +412,7 @@ span {
         transition: 1s ease-out;
 
     }
+
     .menu.active ul {
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
@@ -318,7 +435,70 @@ span {
         top: -9px;
 
     }
+
+    .header {
+        height: 100vh;
+    }
+
+    .AboutMe {
+        padding-inline: 1em;
+    }
+
+    .about {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .about img {
-        max-width: 400px;
+        max-width: 250px;
+        padding-inline: 0em;
+
+
+    }
+
+    .about p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .sectionEducation {
+        display: flex;
+        padding-inline: 0.6em;
+        padding-top: 7em;
+        flex-direction: column;
+    }
+
+    .techsImagem img {
+        max-width: 300px;
+    }
+
+    .techs h1 {
+        font-size: 12px;
+    }
+
+    .experienceProfessional {
+        padding-inline: 1em;
+
+
+    }
+
+    .cardExperience img {
+        width: 50px;
+    }
+
+    .experienceProfessional h1 {
+        font-size: 18px;
+    }
+
+    .InformationExperience h2 {
+        font-size: 15px;
+
+    }
+
+    .InformationExperience p {
+        font-size: 13px;
+
     }
 }
