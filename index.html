@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diogo Rennam</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Preahvihear&display=swap"
-        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Luckiest+Guy&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
         <nav id="menu" class="menu">
             <a href="#menu">
-                <h1>DIOGO <br>RENNAM</h1>
+                <img src="./assets/LogoMenu.svg" alt="">
             </a>
             <button class="hamburguer"></button>
 
@@ -25,15 +24,13 @@
                     <a href="#AboutMe"> Sobre</a>
                 </li>
                 <li><a href="">Projetos</a></li>
-                <li><a href="">Experiência</a></li>
+                <li><a href="#experienceProfessional">Experiência</a></li>
                 <li><a href="">Blog</a></li>
-                <li><a href="">Educação</a></li>
+                <li><a href="#sectionEducation">Educação</a></li>
             </ul>
         </nav>
 
         <div class="sectionPresentation">
-            <img src="./assets/imageBoneco.svg" alt="" />
-
             <div class="hero">
                 <h1>Olá! Eu sou <span>Diogo Rennam</span></h1>
                 <h2>Front-end Developer</h2>
@@ -42,78 +39,184 @@
                     Eperiências Digitais Memoráveis
                 </p>
             </div>
+            <img src="./assets/imageBoneco.svg" alt="" />
+
         </div>
     </header>
 
-    <section id="AboutMe" class="AboutMe">
-        <h1>SOBRE:</h1>
+    <section id="AboutMe" class="sectionAbout">
         <div class="about">
             <div class="ProfilePhoto">
-                <img src="./assets/ImagemDiogo.svg" alt="imagem de diogo Rennam">
+                <img src="./assets/FotoDiogo.jpg" alt="imagem de diogo Rennam">
             </div>
-            <div>
+
+            <div class="AboutMe">
+
+                <h1>SOBRE</h1>
                 <p>
                     Olá a todos! Sou Diogo Rennam, um apaixonado por tecnologia atualmente cursando Análise e
-                    Desenvolvimento de Sistemas. Com foco na área de desenvolvimento front-end, trabalho com diversas
-                    tecnologias, como JavaScript, HTML, CSS, Git, ReactJS e React Native, com o objetivo de me tornar um
+                    Desenvolvimento de Sistemas. Com foco na área de desenvolvimento front-end, trabalho com
+                    diversas
+                    tecnologias, como JavaScript, HTML, CSS, Git, ReactJS e React Native, com o objetivo de me
+                    tornar um
                     desenvolvedor Full-stack no futuro.
                 </p>
 
                 <!-- Parte do texto que será ocultada inicialmente -->
                 <p id="maisTexto" style="display:none">
-                    Minha jornada profissional é marcada por um compromisso constante com o aprendizado e a evolução.
-                    Mantenho-me atualizado com as tendências da indústria, buscando sempre aprimorar minhas habilidades.
+                    Minha jornada profissional é marcada por um compromisso constante com o aprendizado e a
+                    evolução.
+                    Mantenho-me atualizado com as tendências da indústria, buscando sempre aprimorar minhas
+                    habilidades.
                     Além de minha ocupação profissional, sou um fervoroso defensor do voluntariado em iniciativas
-                    sociais, pois acredito firmemente que a tecnologia possui um potencial imenso para gerar um impacto
+                    sociais, pois acredito firmemente que a tecnologia possui um potencial imenso para gerar um
+                    impacto
                     benéfico na sociedade. Estou animado com as oportunidades que o futuro reserva e ansioso para
                     contribuir de forma significativa no campo da tecnologia e além.
                 </p>
-                  <!-- Botão "Leia mais" -->
-            <span id="leiaMaisBtn">Leia mais</span>
+
+                <span id="leiaMaisBtn">Leia mais</span>
+
+
             </div>
 
-
-          
-
-
         </div>
+    </section>
+    <section class="experienceProfessional" id="experienceProfessional">
+        <h1 class="title">Experências Profissionais</h1>
+
+        <div class="Cards">
+            <div class="cardExperience">
+                <h1>Fev 2023 - atual</h1>
+                <h2>Front-end Developer
+                </h2>
+                <p>Atuo no desenvolvimento de soluções tecnológicas, abrangendo desde a fase de prototipação até o
+                    desenvolvimento de websites, aplicativos e aplicativos para desktop, com ênfase na utilização da
+                    linguagem JavaScript como base. </p>
+                <ul>
+                    <li>Figma</li>
+                    <li>ReactJs</li>
+                    <li>React Native</li>
+                    <li>Vite</li>
+                </ul>
+                <span> <a href="https://newtoo.com.br/" target="_blank"> newtoo</a></span>
+            </div>
+
+            <div class="cardExperience">
+                <h1>Mar 2022 - Fev 2023</h1>
+                <h2>Jovem Aprendiz
+                </h2>
+                <p>Atuava no setor de tecnologia, prestando suporte aos usuários para esclarecer dúvidas e resolver
+                    problemas tanto relacionados a software quanto a dispositivos físicos</p>
+                <ul>
+                    <li>Excel</li>
+                    <li>ERP (Industrial)</li>
+                    <li>Suporte</li>
+                    <li>Atendimento</li>
+
+                </ul>
+                <span> <a href="https://www.esquadromil.com.br/" target="_blank"> Esquadromil</a></span>
+            </div>
+        </div>
+
+
+
     </section>
     <section class="techs">
-        <h1>Tecnologias e Ferramentas que tenho domínio</h1>
-        <div class="techsImagem">
-            <img src="./assets/Stacks.svg" alt="">
+        <h1>habilidades</h1>
 
-        </div>
-    </section>
+        <div class="ContainerHabilidades">
+            <div class="HardSkills">
+                <h2>Hard skills</h2>
 
-    <section class="experienceProfessional">
-        <h1>Experências Profissionais:</h1>
-        <div class="CardsExperiences">
-            <div class="cardExperience">
-                <img src="/assets/logoNewtoo.svg" alt="logo newtoo">
-                <div class="InformationExperience">
-                    <h2>Front-end Developer</h2>
-                    <p>Atuo como desenvolvedor Front-end e Ux/desing </p>
-                    <p>Fev 2023 - atual</p>
-
-                    <a href="https://newtoo.com.br/" target="_blank">Newtoo</a>
+                <div class="habilidade">
+                    <span class="habilidade-titulo">ReactJS</span>
+                    <div class="barra-container">
+                        <div class="barra-progresso"  style="width: 80%;" ></div>
+                    </div>
                 </div>
+
+                <div class="habilidade">
+                    <span class="habilidade-titulo">React native</span>
+                    <div class="barra-container">
+                        <div class="barra-progresso" style="width: 80%;"></div>
+                        <!-- Exemplo de largura diferente -->
+                    </div>
+
+                </div>
+
+                <div class="habilidade">
+                    <span class="habilidade-titulo">Node</span>
+                    <div class="barra-container">
+                        <div class="barra-progresso" style="width: 60%;"></div>
+                        <!-- Exemplo de largura diferente -->
+                    </div>
+
+                </div>
+
+                <div class="habilidade">
+                    <span class="habilidade-titulo">JavaScript</span>
+                    <div class="barra-container">
+                        <div class="barra-progresso" style="width: 85%;"></div>
+                        <!-- Exemplo de largura diferente -->
+                    </div>
+
+                </div>
+
+                <div class="habilidade">
+                    <span class="habilidade-titulo">Figma</span>
+                    <div class="barra-container">
+                        <div class="barra-progresso" style="width: 90%;"></div>
+                        <!-- Exemplo de largura diferente -->
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="cardExperience">
-                <img src="/assets/logoEsquadromil.svg" alt="logo newtoo">
-                <div class="InformationExperience">
-                    <h2>Jovem Aprendiz</h2>
-                    <p>Atuava no setor de tecnologia com suporte ao usuário </p>
-                    <p>Mar 2022 - Fev 2023</p>
-                    <a href="https://www.esquadromil.com.br/" target="_blank">Esquadromil</a>
-                </div>
+            <div class="SoftSkills">
+                <h2>Soft skills</h2>
+                
+                
+                    <div class="habilidade">
+                        <span class="habilidade-titulo">Trabalho em Equipe</span>
+                        <div class="barra-container">
+                            <div class="barra-progresso" style="width: 96%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="habilidade">
+                        <span class="habilidade-titulo">Protividade</span>
+                        <div class="barra-container">
+                            <div class="barra-progresso" style="width: 100%;"></div>
+                            <!-- Exemplo de largura diferente -->
+                        </div>
+                    </div>
+
+                    
+                    <div class="habilidade">
+                        <span class="habilidade-titulo">Comunicação</span>
+                        <div class="barra-container">
+                            <div class="barra-progresso" style="width: 98%;"></div>
+                            <!-- Exemplo de largura diferente -->
+                        </div>
+                    </div>
+
+                    <div class="habilidade">
+                        <span class="habilidade-titulo">Liderança</span>
+                        <div class="barra-container">
+                            <div class="barra-progresso" style="width: 90%;"></div>
+                            <!-- Exemplo de largura diferente -->
+                        </div>
+                    </div>
             </div>
         </div>
 
     </section>
 
-    <section class="sectionEducation">
+
+
+    <section class="sectionEducation" id="sectionEducation">
         <h1>Educação</h1>
 
         <div class="education">
@@ -139,23 +242,48 @@
 
             </details>
 
-            <details id="detailsEnsinoSuperior">
-                <summary>Cursos e Certificações</summary>
-                <ul>
-                    <li>Curso Ux/Design <a href="https://webprocess.me/" target="_blank"> Web Process</a> (em andamento)
-                    </li>
-                    <li>AWS Academy Graduate - AWS Academy Cloud Foundations</li>
-                    <li>Networking Essentials Introdução a redes </li>
-                    <li>Cybersecurity Essentials</li>
-                    <li>Mentor do Minicurso Primeiro Passos na web</li>
-                </ul>
-                <p>Todos certificados podem ser verificados <a
-                        href="https://drive.google.com/drive/folders/1lnlRr-he0RLZzby5oa1ZwSIFmdgI8JCv?usp=sharing"
-                        target="_blank">aqui</a></p>
-            </details>
         </div>
 
 
+    </section>
+
+    <section id="AboutMe" class="sectionAbout">
+        <div class="about">
+            <div class="ProfilePhoto">
+                <img src="./assets/FotoDiogo.jpg" alt="imagem de diogo Rennam">
+            </div>
+
+            <div class="AboutMe">
+
+                <h1>SOBRE</h1>
+                <p>
+                    Olá a todos! Sou Diogo Rennam, um apaixonado por tecnologia atualmente cursando Análise e
+                    Desenvolvimento de Sistemas. Com foco na área de desenvolvimento front-end, trabalho com
+                    diversas
+                    tecnologias, como JavaScript, HTML, CSS, Git, ReactJS e React Native, com o objetivo de me
+                    tornar um
+                    desenvolvedor Full-stack no futuro.
+                </p>
+
+                <!-- Parte do texto que será ocultada inicialmente -->
+                <p id="maisTexto" style="display:none">
+                    Minha jornada profissional é marcada por um compromisso constante com o aprendizado e a
+                    evolução.
+                    Mantenho-me atualizado com as tendências da indústria, buscando sempre aprimorar minhas
+                    habilidades.
+                    Além de minha ocupação profissional, sou um fervoroso defensor do voluntariado em iniciativas
+                    sociais, pois acredito firmemente que a tecnologia possui um potencial imenso para gerar um
+                    impacto
+                    benéfico na sociedade. Estou animado com as oportunidades que o futuro reserva e ansioso para
+                    contribuir de forma significativa no campo da tecnologia e além.
+                </p>
+
+                <span id="leiaMaisBtn">Leia mais</span>
+
+
+            </div>
+
+        </div>
     </section>
 </body>
 <script src="./script.js"></script>
