@@ -363,7 +363,7 @@ span {
 
 .education details summary {
 
-    background: #7D11F9;
+    background: #8C89A2;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -388,6 +388,53 @@ span {
 
     text-decoration: none;
 
+}
+
+.contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: var(--background-color2);
+    height: 200px;
+}
+.ContactIformation{
+    display: flex;
+}
+.ContactIformation img{
+    width: 300px;
+    height: 300px;
+}
+.ContactIformation ul li a {
+    font-size: 25px;
+    color: var(--title-color);
+    transition: all 0.4s;
+}
+
+.ContactIformation ul  {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.ContactIformation ul  li a:hover{
+    color: #7D11F9;
+}
+iframe {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-inline: 30px;
+
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
 
 @keyframes preenchimento {
@@ -493,7 +540,7 @@ span {
         clip-path: circle(100px at 90% -35%);
         pointer-events: none;
         gap: 0;
-    
+
 
     }
 

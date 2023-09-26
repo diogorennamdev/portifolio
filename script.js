@@ -92,3 +92,17 @@ window.addEventListener('scroll', animateProgressBars);
 // Chame a função de animação uma vez quando a página for carregada
 window.addEventListener('load', animateProgressBars);
 
+function emailSend(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "diogorenan006@gmail.com",
+        Password : "46677B3EA57BF0CA64DA77024E05A8A8541C",
+        To : 'diogorenan006@gmail.com',
+        From : "diogorenan006@gmail.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+      
+    );
+}
